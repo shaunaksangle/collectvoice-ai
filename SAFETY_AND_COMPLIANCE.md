@@ -1,6 +1,6 @@
 # Safety And Compliance
 
-CollectVoice AI is currently mock-only. It does not make real phone calls and does not connect to Sarvam, Exotel, Twilio, LiveKit, or any telephony provider.
+CollectVoice AI is currently a mock/demo MVP. It does not make real phone calls and does not connect to Sarvam, Exotel, Twilio, LiveKit, or any telephony provider. The public repository should contain only fake demo data and no production API keys or secrets.
 
 This document describes safety expectations for future production work.
 
@@ -11,6 +11,8 @@ This document describes safety expectations for future production work.
 - Mock calls generate local simulated transcripts.
 - No external API is called for speech, LLM, or telephony.
 - No customer is contacted by the current system.
+- No real customer data should be committed to this repository.
+- No production provider credentials should be committed to this repository.
 
 ## Conversation Principles
 

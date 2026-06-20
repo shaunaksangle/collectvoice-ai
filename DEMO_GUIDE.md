@@ -1,6 +1,6 @@
 # CollectVoice AI Demo Guide
 
-This guide is a 10-minute walkthrough for showing CollectVoice AI to a small debt collection agency. The system is mock-only. It does not make real calls.
+This guide is a 10-minute walkthrough for showing CollectVoice AI to a small debt collection agency. The system is a mock/demo MVP: it does not make real calls, does not use real customer data, and does not require production API keys.
 
 ## Before The Demo
 
@@ -28,6 +28,8 @@ $env:ALLOW_DEMO_RESET = "true"
 python scripts\reseed_demo_data.py
 Remove-Item Env:\ALLOW_DEMO_RESET
 ```
+
+The reseed script creates fake demo records only. Do not use real customer files or real agency data in a public demo.
 
 Start the frontend:
 

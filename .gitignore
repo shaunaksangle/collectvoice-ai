@@ -1,5 +1,7 @@
 .env
+!.env.example
 .venv/
+backend/.venv/
 __pycache__/
 *.py[cod]
 .pytest_cache/
@@ -7,19 +9,26 @@ __pycache__/
 
 node_modules/
 dist/
+frontend/dist/
 .vite/
 
 *.log
+logs/
+backend/logs/
+frontend/logs/
 .DS_Store
 Thumbs.db
 
 *.env
 .env.*
+!.env.example
+!**/.env.example
 backend/.env
 frontend/.env
 frontend/.env.*
 
 *.sqlite
+*.sqlite3
 *.db
 
 uploads/
@@ -29,3 +38,4 @@ backend/data/
 
 *.xlsx
 *.xls
+*.csv

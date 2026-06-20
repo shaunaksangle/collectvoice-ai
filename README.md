@@ -1,8 +1,8 @@
 # CollectVoice AI
 
-CollectVoice AI is a mock-ready AI voice calling operations system for small collections teams. It helps managers upload collection cases, create campaigns, generate call queues, simulate safe AI calls, and review outcomes such as promise-to-pay commitments and human callback requests.
+CollectVoice AI is a mock/demo MVP for an AI voice calling operations system for small collections teams. It helps managers upload collection cases, create campaigns, generate call queues, simulate safe AI call outcomes, and review follow-ups such as promise-to-pay commitments and human callback requests.
 
-This repository is currently a local/demo foundation. It does not place real phone calls.
+This public repository is intended for portfolio and demo use. It does not place real phone calls, does not include real customer data, and does not include production API keys or secrets.
 
 ## Current System Status
 
@@ -10,6 +10,8 @@ This repository is currently a local/demo foundation. It does not place real pho
 - No Sarvam integration is active yet.
 - No Exotel, Twilio, LiveKit, or other telephony integration is active yet.
 - No real calls are made.
+- No real customer records, lender files, phone numbers, loan IDs, or agency data are included.
+- No production API keys or secrets are included.
 - No authentication or role-based access control is implemented yet.
 - PostgreSQL is used for application data.
 - Redis is included in Docker Compose for future worker/queue use, but there is no live background calling worker yet.
@@ -53,6 +55,20 @@ Current API style:
 - Human Callback list, detail, update, filters, and summary.
 - Local demo reset/seed/reseed scripts.
 - Provider interface placeholders for future STT, TTS, LLM, and telephony services.
+
+## Portfolio Highlights
+
+This project demonstrates:
+
+- Full-stack application architecture.
+- Case upload, column normalization, validation, preview, and commit flow.
+- Campaign management for grouping collection cases.
+- Call queue generation from campaign cases.
+- Mock AI call outcome simulation with transcripts.
+- Promise-to-pay tracking.
+- Human callback handling for escalations and disputes.
+- Manager dashboard across the collection workflow.
+- FastAPI + React + PostgreSQL + Docker local development workflow.
 
 ## Future Work
 
@@ -248,7 +264,7 @@ alembic revision -m "describe_change"
 
 These scripts are for local/demo databases only.
 
-Seed fake Indian collection demo data:
+Seed fake/demo-only Indian collection data:
 
 ```powershell
 cd backend
@@ -278,7 +294,7 @@ Remove-Item Env:\ALLOW_DEMO_RESET
 
 Reset deletes workflow data in safe order but does not drop database tables and does not touch the Alembic version table.
 
-Seed creates:
+Seed creates fake records only:
 
 - 10 fake customers
 - 10 fake collection cases
@@ -338,7 +354,7 @@ Asha Rao,9876543210,LOAN-1001,12000.50
 Rahul Mehta,9876543211,LOAN-1002,9000
 ```
 
-Common aliases such as `name`, `borrower_name`, `mobile`, `loan_id`, `agreement_id`, `due_amount`, `emi`, `dpd`, `risk`, `agent`, and `case_status` are supported by the upload parser.
+The CSV above is illustrative only. Do not commit real customer names, real phone numbers, real loan IDs, lender exports, or agency data. Common aliases such as `name`, `borrower_name`, `mobile`, `loan_id`, `agreement_id`, `due_amount`, `emi`, `dpd`, `risk`, `agent`, and `case_status` are supported by the upload parser.
 
 ## Mock Mode
 

@@ -1,6 +1,6 @@
 # CollectVoice AI Architecture
 
-CollectVoice AI is built as a modular mock-first system. The current architecture lets the team demo the complete collection workflow without enabling real calls.
+CollectVoice AI is built as a modular mock-first demo MVP. The current architecture lets the team demonstrate the complete collection workflow without enabling real calls, storing real customer data, or shipping production API keys.
 
 ## Frontend
 
@@ -97,6 +97,7 @@ Current behavior:
 - No external API calls.
 - No phone calls.
 - Mock transcripts and outcomes are generated locally.
+- Demo data is fake and generated for local presentations.
 
 ## Future Sarvam And Telephony Provider Layer
 
