@@ -1,6 +1,6 @@
 # CollectVoice AI
 
-CollectVoice AI is a mock-ready AI voice calling operations system for small debt collection teams. It helps managers upload collection cases, create campaigns, generate call queues, simulate safe AI calls, and review outcomes such as promise-to-pay commitments and human callback requests.
+CollectVoice AI is a mock-ready AI voice calling operations system for small collections teams. It helps managers upload collection cases, create campaigns, generate call queues, simulate safe AI calls, and review outcomes such as promise-to-pay commitments and human callback requests.
 
 This repository is currently a local/demo foundation. It does not place real phone calls.
 
